@@ -17,5 +17,7 @@ target 'recordDiet' do
   end
 
   pod 'Charts' 
+  pod 'FSCalendar'
+  pod 'RealmSwift'
 
 end
