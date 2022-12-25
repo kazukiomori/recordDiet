@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="maI-OV-OwK">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -9,7 +9,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="dmN-cC-oCF">
+            <objects>
+                <tabBarController id="maI-OV-OwK" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5rn-kk-qcM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="KXN-bx-Pg9"/>
+                        <segue destination="d3r-BH-5IK" kind="relationship" relationship="viewControllers" id="iyq-qp-HEv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLp-16-77m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1334" y="-165"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TopViewController" customModule="recordDiet" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,10 +62,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="acU-St-pYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4oO-SY-1XC"/>
-                            <constraint firstItem="acU-St-pYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Aew-bc-K6M"/>
                             <constraint firstItem="acU-St-pYZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="B1L-FP-ZMJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vpo-CN-zQc" secondAttribute="trailing" constant="20" id="Ebm-6b-gc6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acU-St-pYZ" secondAttribute="trailing" constant="20" id="Roe-9i-eEY"/>
                             <constraint firstItem="qv9-SR-LTe" firstAttribute="top" secondItem="Vpo-CN-zQc" secondAttribute="bottom" constant="30" id="Xbo-dh-tPt"/>
                             <constraint firstItem="Vpo-CN-zQc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dpe-Fd-UbY"/>
                             <constraint firstItem="qv9-SR-LTe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kA1-UO-eN9"/>
@@ -56,6 +72,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qv9-SR-LTe" secondAttribute="trailing" constant="20" id="zFc-Gn-35T"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="v8N-0I-Akt"/>
                     <connections>
                         <outlet property="chartView" destination="acU-St-pYZ" id="SoE-DZ-voa"/>
                         <outlet property="recordButton" destination="qv9-SR-LTe" id="r8w-G2-67s"/>
@@ -64,7 +81,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="-442" y="-765"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="GgQ-KY-obv">
+            <objects>
+                <viewController id="d3r-BH-5IK" customClass="CalendarViewController" customModule="recordDiet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CsY-vd-yKT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QIz-O9-qko"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="wQe-gu-eIu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfw-Gl-iCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-443" y="-47"/>
         </scene>
     </scenes>
     <resources>
