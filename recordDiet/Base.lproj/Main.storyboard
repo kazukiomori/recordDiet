@@ -19,13 +19,30 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="KXN-bx-Pg9"/>
-                        <segue destination="d3r-BH-5IK" kind="relationship" relationship="viewControllers" id="iyq-qp-HEv"/>
+                        <segue destination="J6C-e7-HD2" kind="relationship" relationship="viewControllers" id="bID-CT-4Cc"/>
+                        <segue destination="nyb-7d-kOT" kind="relationship" relationship="viewControllers" id="uzh-82-875"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLp-16-77m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1334" y="-165"/>
+            <point key="canvasLocation" x="-2978" y="-766"/>
+        </scene>
+        <!--体重-->
+        <scene sceneID="mkZ-6L-lV2">
+            <objects>
+                <navigationController id="J6C-e7-HD2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="体重" image="chart.line.downtrend.xyaxis.circle" catalog="system" selectedImage="chart.line.downtrend.xyaxis.circle.fill" id="eiq-Sd-acW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YWy-jT-5Rz">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xGN-9C-N2P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1D-iI-JPM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="-766"/>
         </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -36,21 +53,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acU-St-pYZ">
-                                <rect key="frame" x="20" y="57" width="350" height="400"/>
+                                <rect key="frame" x="20" y="101" width="350" height="400"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="rFa-CM-qYW"/>
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vpo-CN-zQc">
-                                <rect key="frame" x="20" y="487" width="350" height="32"/>
+                                <rect key="frame" x="20" y="531" width="350" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv9-SR-LTe">
-                                <rect key="frame" x="20" y="548" width="350" height="35"/>
+                                <rect key="frame" x="20" y="592" width="350" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="記録する">
@@ -73,6 +90,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="v8N-0I-Akt"/>
+                    <navigationItem key="navigationItem" id="FHX-yv-iQT"/>
                     <connections>
                         <outlet property="chartView" destination="acU-St-pYZ" id="SoE-DZ-voa"/>
                         <outlet property="recordButton" destination="qv9-SR-LTe" id="r8w-G2-67s"/>
@@ -82,6 +100,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442" y="-765"/>
+        </scene>
+        <!--カレンダー-->
+        <scene sceneID="f0R-8o-hm7">
+            <objects>
+                <navigationController id="nyb-7d-kOT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="カレンダー" image="calendar.circle" catalog="system" selectedImage="calendar.circle.fill" id="gez-lb-ZLI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IlZ-IK-CWA">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d3r-BH-5IK" kind="relationship" relationship="rootViewController" id="eww-gv-BCj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feR-ul-5bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="6"/>
         </scene>
         <!--Item-->
         <scene sceneID="GgQ-KY-obv">
@@ -94,13 +129,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="wQe-gu-eIu"/>
+                    <navigationItem key="navigationItem" id="mJv-ax-doJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfw-Gl-iCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443" y="-47"/>
+            <point key="canvasLocation" x="-443" y="6"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar.circle" catalog="system" width="128" height="123"/>
+        <image name="calendar.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="chart.line.downtrend.xyaxis.circle" catalog="system" width="128" height="123"/>
+        <image name="chart.line.downtrend.xyaxis.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
