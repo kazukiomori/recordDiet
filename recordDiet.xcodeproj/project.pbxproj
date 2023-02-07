@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18A4A733294E1CD000464CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A732294E1CD000464CB7 /* AppDelegate.swift */; };
 		18A4A735294E1CD000464CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A734294E1CD000464CB7 /* SceneDelegate.swift */; };
-		18A4A737294E1CD000464CB7 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A736294E1CD000464CB7 /* TopViewController.swift */; };
 		18A4A73A294E1CD000464CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4A738294E1CD000464CB7 /* Main.storyboard */; };
 		18A4A73C294E1D0A00464CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A4A73B294E1D0A00464CB7 /* Assets.xcassets */; };
 		18A4A73F294E1D0A00464CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A4A73D294E1D0A00464CB7 /* LaunchScreen.storyboard */; };
@@ -17,9 +16,19 @@
 		18A4A754294E1D0D00464CB7 /* recordDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A753294E1D0D00464CB7 /* recordDietUITests.swift */; };
 		18A4A756294E1D0D00464CB7 /* recordDietUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A755294E1D0D00464CB7 /* recordDietUITestsLaunchTests.swift */; };
 		18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A7652956B46F00464CB7 /* CalendarViewController.swift */; };
-		320B1F3168ACBD64A9C64E87 /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
-		3BBFF676295B73350042187B /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF675295B73350042187B /* MainTabController.swift */; };
+		3B7E1DA5298AB276000B1902 /* GraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E1DA4298AB276000B1902 /* GraphView.xib */; };
+		3B7E1DA7298ABAA5000B1902 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DA6298ABAA5000B1902 /* GraphView.swift */; };
+		3B7E1DA9298AEE6F000B1902 /* WeightGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DA8298AEE6F000B1902 /* WeightGraphViewController.swift */; };
+		3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */; };
+		3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
+		3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BBFF679295B7DF70042187B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF678295B7DF70042187B /* Extensions.swift */; };
+		3BBFF67B295BFD4B0042187B /* WeightInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */; };
+		3BBFF67F295DF3D80042187B /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF67E295DF3D80042187B /* Weight.swift */; };
+		3BBFF6832960A3EC0042187B /* WeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF6822960A3EC0042187B /* WeightViewModel.swift */; };
+		3BBFF6852963374E0042187B /* messageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF6842963374E0042187B /* messageAlert.swift */; };
+		3BBFF6872975B0610042187B /* AppDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF6862975B0610042187B /* AppDate.swift */; };
+		3BBFF6882976EF0B0042187B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A736294E1CD000464CB7 /* TopViewController.swift */; };
 		7C20C23292A354A640E0ECF1 /* Pods_recordDiet_recordDietUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C983D865258809112152129B /* Pods_recordDiet_recordDietUITests.framework */; };
 		88B4A33280F00EA40DC54F8C /* Pods_recordDietTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73788522972EDCAEFC74443 /* Pods_recordDietTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +50,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3B7E1DAF298EEE98000B1902 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		18A4A72F294E1CD000464CB7 /* recordDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recordDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A4A732294E1CD000464CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +80,16 @@
 		18A4A755294E1D0D00464CB7 /* recordDietUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordDietUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18A4A7652956B46F00464CB7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2CB690B4265A5467DC025CF8 /* Pods-recordDiet-recordDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDiet-recordDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-recordDiet-recordDietUITests/Pods-recordDiet-recordDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3BBFF675295B73350042187B /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		3B7E1DA4298AB276000B1902 /* GraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphView.xib; sourceTree = "<group>"; };
+		3B7E1DA6298ABAA5000B1902 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		3B7E1DA8298AEE6F000B1902 /* WeightGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightGraphViewController.swift; sourceTree = "<group>"; };
+		3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		3BBFF678295B7DF70042187B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInputViewController.swift; sourceTree = "<group>"; };
+		3BBFF67E295DF3D80042187B /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		3BBFF6822960A3EC0042187B /* WeightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewModel.swift; sourceTree = "<group>"; };
+		3BBFF6842963374E0042187B /* messageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageAlert.swift; sourceTree = "<group>"; };
+		3BBFF6862975B0610042187B /* AppDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDate.swift; sourceTree = "<group>"; };
 		40884FE3CBDFD2A8FF18DBF1 /* Pods-recordDiet-recordDietUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDiet-recordDietUITests.release.xcconfig"; path = "Target Support Files/Pods-recordDiet-recordDietUITests/Pods-recordDiet-recordDietUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4400E67D0ACFE1F73A232571 /* Pods-recordDietTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDietTests.debug.xcconfig"; path = "Target Support Files/Pods-recordDietTests/Pods-recordDietTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recordDiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320B1F3168ACBD64A9C64E87 /* Pods_recordDiet.framework in Frameworks */,
+				3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +153,10 @@
 		18A4A731294E1CD000464CB7 /* recordDiet */ = {
 			isa = PBXGroup;
 			children = (
+				3B7E1DAA298E8D99000B1902 /* Common */,
+				3B7E1DA3298AB261000B1902 /* View */,
+				3BBFF681296083080042187B /* ViewModel */,
+				3BBFF680295DF3E10042187B /* Model */,
 				3BBFF677295B7DE30042187B /* Util */,
 				18A4A7642956B3D100464CB7 /* ViewController */,
 				18A4A732294E1CD000464CB7 /* AppDelegate.swift */,
@@ -156,17 +191,53 @@
 			children = (
 				18A4A736294E1CD000464CB7 /* TopViewController.swift */,
 				18A4A7652956B46F00464CB7 /* CalendarViewController.swift */,
-				3BBFF675295B73350042187B /* MainTabController.swift */,
+				3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */,
+				3B7E1DA8298AEE6F000B1902 /* WeightGraphViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3B7E1DA3298AB261000B1902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7E1DA4298AB276000B1902 /* GraphView.xib */,
+				3B7E1DA6298ABAA5000B1902 /* GraphView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7E1DAA298E8D99000B1902 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3BBFF67E295DF3D80042187B /* Weight.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		3BBFF677295B7DE30042187B /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				3BBFF678295B7DF70042187B /* Extensions.swift */,
+				3BBFF6842963374E0042187B /* messageAlert.swift */,
+				3BBFF6862975B0610042187B /* AppDate.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		3BBFF680295DF3E10042187B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BBFF681296083080042187B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BBFF6822960A3EC0042187B /* WeightViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		806138EB84FA35E28E58AE86 /* Frameworks */ = {
@@ -204,6 +275,7 @@
 				18A4A72C294E1CD000464CB7 /* Frameworks */,
 				18A4A72D294E1CD000464CB7 /* Resources */,
 				41D7AAFF8465D1D7CFEEC549 /* [CP] Embed Pods Frameworks */,
+				3B7E1DAF298EEE98000B1902 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +376,7 @@
 				18A4A73F294E1D0A00464CB7 /* LaunchScreen.storyboard in Resources */,
 				18A4A73C294E1D0A00464CB7 /* Assets.xcassets in Resources */,
 				18A4A73A294E1CD000464CB7 /* Main.storyboard in Resources */,
+				3B7E1DA5298AB276000B1902 /* GraphView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,11 +504,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBFF6872975B0610042187B /* AppDate.swift in Sources */,
 				18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */,
+				3BBFF6882976EF0B0042187B /* TopViewController.swift in Sources */,
+				3B7E1DA7298ABAA5000B1902 /* GraphView.swift in Sources */,
+				3BBFF67B295BFD4B0042187B /* WeightInputViewController.swift in Sources */,
+				3BBFF6832960A3EC0042187B /* WeightViewModel.swift in Sources */,
 				3BBFF679295B7DF70042187B /* Extensions.swift in Sources */,
-				18A4A737294E1CD000464CB7 /* TopViewController.swift in Sources */,
-				3BBFF676295B73350042187B /* MainTabController.swift in Sources */,
+				3B7E1DA9298AEE6F000B1902 /* WeightGraphViewController.swift in Sources */,
+				3BBFF67F295DF3D80042187B /* Weight.swift in Sources */,
+				3BBFF6852963374E0042187B /* messageAlert.swift in Sources */,
 				18A4A733294E1CD000464CB7 /* AppDelegate.swift in Sources */,
+				3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */,
 				18A4A735294E1CD000464CB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

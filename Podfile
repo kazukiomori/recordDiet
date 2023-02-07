@@ -21,5 +21,7 @@ target 'recordDiet' do
   pod 'FSCalendar'
   pod 'RxSwift'
   pod 'RxCocoa'
-
+  pod 'CalculateCalendarLogic'
+  pod 'SwiftMessages'
+  pod 'SwiftDate'
 end

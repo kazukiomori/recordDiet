@@ -1,14 +1,15 @@
 PODS:
+  - CalculateCalendarLogic (0.6.1)
   - Charts (4.1.0):
     - Charts/Core (= 4.1.0)
   - Charts/Core (4.1.0):
     - SwiftAlgorithms (~> 1.0)
   - FSCalendar (2.8.4)
-  - Realm (10.33.0):
-    - Realm/Headers (= 10.33.0)
-  - Realm/Headers (10.33.0)
-  - RealmSwift (10.33.0):
-    - Realm (= 10.33.0)
+  - Realm (10.34.1):
+    - Realm/Headers (= 10.34.1)
+  - Realm/Headers (10.34.1)
+  - RealmSwift (10.34.1):
+    - Realm (= 10.34.1)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -16,16 +17,24 @@ PODS:
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SwiftAlgorithms (1.0.0)
+  - SwiftDate (7.0.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
 
 DEPENDENCIES:
+  - CalculateCalendarLogic
   - Charts
   - FSCalendar
   - RealmSwift
   - RxCocoa
   - RxSwift
+  - SwiftDate
+  - SwiftMessages
 
 SPEC REPOS:
   trunk:
+    - CalculateCalendarLogic
     - Charts
     - FSCalendar
     - Realm
@@ -34,17 +43,22 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SwiftAlgorithms
+    - SwiftDate
+    - SwiftMessages
 
 SPEC CHECKSUMS:
+  CalculateCalendarLogic: e4f7c7fe17f68b1d30fb51560acc634b4629a622
   Charts: 354f86803d11d9c35de280587fef50d1af063978
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
-  Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
-  RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
+  Realm: fe824cd5b183cd55a50a6bcb4bce3ac1650e60b6
+  RealmSwift: c7f668f82982fc8b62366b78b8dc761f15141df6
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
 
-PODFILE CHECKSUM: 0b5352b0dc320699831c1463060ffda7b5223ad3
+PODFILE CHECKSUM: dbbbf3e31a040ffd6b87a6e50fbea1301d6f7493
 
 COCOAPODS: 1.11.2

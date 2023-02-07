@@ -126,3 +126,7 @@ extension UIView {
                bottom: view.bottomAnchor, right: view.rightAnchor)
     }
 }
+
+extension Notification.Name {
+    static let graphViewShow = Notification.Name("graphViewShow")
+}
