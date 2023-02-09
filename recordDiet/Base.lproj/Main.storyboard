@@ -313,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="-443.07692307692304" y="5.6872037914691944"/>
         </scene>
-        <!--View Controller-->
+        <!--Food List View Controller-->
         <scene sceneID="LvI-EE-IXM">
             <objects>
-                <viewController id="cpf-Zh-LfJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodListViewController" id="cpf-Zh-LfJ" customClass="FoodListViewController" customModule="recordDiet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L3q-zR-OIk">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -41,13 +41,13 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             return holiday.judgeJapaneseHoliday(year: year, month: month, day: day)
         }
         // date型 -> 年月日をIntで取得
-        func getDay(_ date:Date) -> (Int,Int,Int){
-            let tmpCalendar = Calendar(identifier: .gregorian)
-            let year = tmpCalendar.component(.year, from: date)
-            let month = tmpCalendar.component(.month, from: date)
-            let day = tmpCalendar.component(.day, from: date)
-            return (year,month,day)
-        }
+//        func getDay(_ date:Date) -> (Int,Int,Int){
+//            let tmpCalendar = Calendar(identifier: .gregorian)
+//            let year = tmpCalendar.component(.year, from: date)
+//            let month = tmpCalendar.component(.month, from: date)
+//            let day = tmpCalendar.component(.day, from: date)
+//            return (year,month,day)
+//        }
 
         //曜日判定(日曜日:1 〜 土曜日:7)
         func getWeekIdx(_ date: Date) -> Int{
@@ -73,5 +73,12 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
 
             return nil
         }
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FoodListViewController") as? UIViewController else { return }
+        self.navigationController?.show(nextViewController, sender: nil)
+        print (date)
+    }
 
 }
