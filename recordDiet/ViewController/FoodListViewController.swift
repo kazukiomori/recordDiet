@@ -15,12 +15,13 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    // MARK: TableView delegate 
+    // MARK: TableView delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "listTableCell", for: indexPath) as? FoodListTableViewCell else { return UITableViewCell()}
+        return cell
     }
 }
