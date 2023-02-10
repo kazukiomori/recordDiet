@@ -24,6 +24,7 @@
 		3BBB7A5B29967A51007D3730 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */; };
 		3BBB7A5D299691BB007D3730 /* FoodList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A5C299691BB007D3730 /* FoodList.swift */; };
 		3BBB7A5F2996DAD1007D3730 /* FoodListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A5E2996DAD1007D3730 /* FoodListModel.swift */; };
+		3BBB7A612996DF5F007D3730 /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A602996DF5F007D3730 /* FoodListViewModel.swift */; };
 		3BBFF679295B7DF70042187B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF678295B7DF70042187B /* Extensions.swift */; };
 		3BBFF67B295BFD4B0042187B /* WeightInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */; };
 		3BBFF67F295DF3D80042187B /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF67E295DF3D80042187B /* Weight.swift */; };
@@ -88,6 +89,7 @@
 		3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
 		3BBB7A5C299691BB007D3730 /* FoodList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodList.swift; sourceTree = "<group>"; };
 		3BBB7A5E2996DAD1007D3730 /* FoodListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListModel.swift; sourceTree = "<group>"; };
+		3BBB7A602996DF5F007D3730 /* FoodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
 		3BBFF678295B7DF70042187B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInputViewController.swift; sourceTree = "<group>"; };
 		3BBFF67E295DF3D80042187B /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				3BBFF6822960A3EC0042187B /* WeightViewModel.swift */,
+				3BBB7A602996DF5F007D3730 /* FoodListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				18A4A733294E1CD000464CB7 /* AppDelegate.swift in Sources */,
 				3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */,
 				18A4A735294E1CD000464CB7 /* SceneDelegate.swift in Sources */,
+				3BBB7A612996DF5F007D3730 /* FoodListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

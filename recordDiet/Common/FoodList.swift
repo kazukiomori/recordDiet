@@ -13,7 +13,7 @@ class FoodList: Object {
     @objc dynamic var date: String = ""
     @objc dynamic var time: String = ""
     @objc dynamic var menu: String = ""
-    @objc dynamic var calorie: String = ""
+    @objc dynamic var calorie: Int = 0
     @objc dynamic var memo: String = ""
     
 }
