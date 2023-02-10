@@ -22,6 +22,7 @@
 		3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BBB7A572992B518007D3730 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A562992B518007D3730 /* FoodListViewController.swift */; };
 		3BBB7A592992B564007D3730 /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A582992B564007D3730 /* FoodListTableViewCell.swift */; };
+		3BBB7A5B29967A51007D3730 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */; };
 		3BBFF679295B7DF70042187B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF678295B7DF70042187B /* Extensions.swift */; };
 		3BBFF67B295BFD4B0042187B /* WeightInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */; };
 		3BBFF67F295DF3D80042187B /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF67E295DF3D80042187B /* Weight.swift */; };
@@ -84,6 +85,7 @@
 		3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		3BBB7A562992B518007D3730 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
 		3BBB7A582992B564007D3730 /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
+		3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
 		3BBFF678295B7DF70042187B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInputViewController.swift; sourceTree = "<group>"; };
 		3BBFF67E295DF3D80042187B /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				3BBFF67A295BFD4B0042187B /* WeightInputViewController.swift */,
 				3B7E1DA8298AEE6F000B1902 /* WeightGraphViewController.swift */,
 				3BBB7A562992B518007D3730 /* FoodListViewController.swift */,
+				3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBB7A5B29967A51007D3730 /* FoodInputViewController.swift in Sources */,
 				3BBFF6872975B0610042187B /* AppDate.swift in Sources */,
 				3BBB7A592992B564007D3730 /* FoodListTableViewCell.swift in Sources */,
 				18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */,
