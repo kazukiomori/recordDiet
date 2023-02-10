@@ -16,7 +16,4 @@ class FoodList: Object {
     @objc dynamic var calorie: String = ""
     @objc dynamic var memo: String = ""
     
-    override static func primaryKey() -> String? {
-        return "dateSt"
-    }
 }
