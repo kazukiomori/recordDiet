@@ -6,12 +6,26 @@
 //
 
 import UIKit
+import RxSwift
 
 class FoodListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    private let disposeBag = DisposeBag()
+    @IBOutlet weak var addMenuButton: UIButton! {
+        didSet {
+            addMenuButton.rx.tap.subscribe (onNext :{ _ in
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FoodInputViewController") as? FoodInputViewController else { return }
+                self.navigationController?.show(nextViewController, sender: nil)
+            }).disposed(by: disposeBag)
+        }
+    }
+    
+    var date: String = ""
     
     // MARK: ライフサイクル
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = date
     }
     
     

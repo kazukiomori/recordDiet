@@ -85,8 +85,8 @@ class AppDate: NSObject {
     }
     
     func dateDate(string: String, format1: String, format2: String) -> String {
-        let date1 = dateFromString(string: string, format: format1)
-        let date2 = stringFromDate(date: date1, format: format2)
+        let date1: Date = dateFromString(string: string, format: format1)
+        let date2: String = stringFromDate(date: date1, format: format2)
         return date2
     }
     

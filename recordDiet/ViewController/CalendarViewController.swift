@@ -76,7 +76,8 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FoodListViewController") as? UIViewController else { return }
+        guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FoodListViewController") as? FoodListViewController else { return }
+        nextViewController.date = AppDate().stringFromDate(date: date, format: "yyyy/MM/dd")
         self.navigationController?.show(nextViewController, sender: nil)
         print (date)
     }

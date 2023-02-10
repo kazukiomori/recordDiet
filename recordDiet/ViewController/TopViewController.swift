@@ -22,7 +22,7 @@ class TopViewController: UIViewController, ChartViewDelegate {
         didSet {
             recordButton.rx.tap.subscribe (onNext :{ _ in
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WeightInputViewController") as? UIViewController else { return }
+                guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "WeightInputViewController") as? WeightInputViewController else { return }
                 self.navigationController?.show(nextViewController, sender: nil)
             }).disposed(by: disposeBag)
         }
