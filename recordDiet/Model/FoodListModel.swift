@@ -21,7 +21,7 @@ class FoodListModel {
         let realm = try! Realm()
         let food = FoodList()
         var results: Results<FoodList>
-        results = realm.objects(FoodList.self)
+        results = realm.objects(FoodList.self).filter("date == \(date)")
         return results
     }
 }

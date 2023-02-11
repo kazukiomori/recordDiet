@@ -22,7 +22,7 @@ class FoodListViewModel {
             food.menu = result.menu
             food.calorie = result.calorie
             food.memo = result.memo
-            
+            food.date = result.date
             foodList.append(food)
         }
         return foodList
@@ -30,12 +30,13 @@ class FoodListViewModel {
     
     
     // viewで入力した値をFoodList型の変数にまとめて、FoodListModelでrealmに保存する
-    func addData(time: String, menu: String, calorie: Int, memo: String){
+    func addData(time: String, menu: String, calorie: Int, memo: String, date: String){
         let food = FoodList()
         food.time = time
         food.menu = menu
         food.calorie = calorie
         food.memo = memo
+        food.date = date
         model.addData(food: food)
     }
 }

@@ -352,7 +352,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摂取カロリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0N-Mr-9nY">
-                                                            <rect key="frame" x="190" y="21" width="150" height="21"/>
+                                                            <rect key="frame" x="190" y="21" width="150" height="20.333333333333329"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="150" id="68X-Ed-FeV"/>
                                                             </constraints>
@@ -383,17 +383,30 @@
                                     <constraint firstAttribute="bottom" secondItem="RZB-Qr-q2O" secondAttribute="bottom" constant="50" id="Zcy-2F-DNv"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M0-gj-0S0">
-                                <rect key="frame" x="0.0" y="770" width="390" height="40"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09z-Iw-Zaf">
+                                <rect key="frame" x="0.0" y="760" width="390" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bB-Cv-sWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="体の写真を追加">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M0-gj-0S0">
+                                        <rect key="frame" x="195" y="0.0" width="195" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="食事内容を追加">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="tHQ-3I-855"/>
+                                    <constraint firstAttribute="height" constant="50" id="2wY-j8-VBT"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="食事内容を追加">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
+                            </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jiS-vy-ShI">
                                 <rect key="frame" x="0.0" y="47" width="390" height="150"/>
                                 <constraints>
@@ -404,20 +417,22 @@
                         <viewLayoutGuide key="safeArea" id="CAP-FS-oKL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CAP-FS-oKL" firstAttribute="bottom" secondItem="1M0-gj-0S0" secondAttribute="bottom" id="0b1-xL-eKf"/>
-                            <constraint firstItem="CAP-FS-oKL" firstAttribute="trailing" secondItem="1M0-gj-0S0" secondAttribute="trailing" id="Is0-z1-7Aw"/>
+                            <constraint firstItem="CAP-FS-oKL" firstAttribute="trailing" secondItem="09z-Iw-Zaf" secondAttribute="trailing" id="ILf-nV-1Ob"/>
                             <constraint firstItem="7PY-OZ-xav" firstAttribute="top" secondItem="CAP-FS-oKL" secondAttribute="top" id="PJJ-ee-ljH"/>
+                            <constraint firstItem="CAP-FS-oKL" firstAttribute="bottom" secondItem="09z-Iw-Zaf" secondAttribute="bottom" id="STQ-7H-ryX"/>
                             <constraint firstItem="jiS-vy-ShI" firstAttribute="leading" secondItem="CAP-FS-oKL" secondAttribute="leading" id="UVY-gF-f6h"/>
                             <constraint firstItem="7PY-OZ-xav" firstAttribute="leading" secondItem="CAP-FS-oKL" secondAttribute="leading" id="Z9B-Vc-eC2"/>
                             <constraint firstItem="jiS-vy-ShI" firstAttribute="trailing" secondItem="CAP-FS-oKL" secondAttribute="trailing" id="nRx-m5-2gj"/>
+                            <constraint firstItem="09z-Iw-Zaf" firstAttribute="leading" secondItem="CAP-FS-oKL" secondAttribute="leading" id="pWQ-r8-zAE"/>
                             <constraint firstItem="CAP-FS-oKL" firstAttribute="bottom" secondItem="7PY-OZ-xav" secondAttribute="bottom" constant="50" id="qCu-cO-hZj"/>
                             <constraint firstItem="jiS-vy-ShI" firstAttribute="top" secondItem="CAP-FS-oKL" secondAttribute="top" id="qQ9-Lq-csg"/>
                             <constraint firstItem="CAP-FS-oKL" firstAttribute="trailing" secondItem="7PY-OZ-xav" secondAttribute="trailing" id="uIE-IZ-xZP"/>
-                            <constraint firstItem="1M0-gj-0S0" firstAttribute="leading" secondItem="CAP-FS-oKL" secondAttribute="leading" id="xLH-tV-RKF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addImageButton" destination="7bB-Cv-sWb" id="6kE-1g-9LO"/>
                         <outlet property="addMenuButton" destination="1M0-gj-0S0" id="60b-j8-JgR"/>
+                        <outlet property="bodyImageView" destination="jiS-vy-ShI" id="Smh-ol-ddE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJv-ay-Mm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
