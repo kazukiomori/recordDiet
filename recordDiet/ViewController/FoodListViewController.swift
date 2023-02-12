@@ -30,22 +30,43 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     var date: String = ""
+    var addBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var bodyImageView: UIImageView!
     
     // MARK: ライフサイクル
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = date
+        self.navigationItemSet()
     }
     
     
     // MARK: メソッド
     func addImageAction() {
         let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .camera
+        // imagePicker.sourceType = .camera はシミュレーターでは使えない
+        imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
         present(imagePicker, animated: true)
     }
+    
+    func navigationItemSet() {
+        navigationItem.title = date
+        addBarButtonItem = UIBarButtonItem(title: "保存", style: .done, target: self, action: #selector(addButtonTapped))
+        addBarButtonItem.tintColor = .black
+        self.navigationItem.rightBarButtonItems = [addBarButtonItem]
+    }
+    
+    @objc func addButtonTapped() {
+        if bodyImageView.image == nil {
+            messageAlert.shared.showErrorMessage(title: "エラー", body: "画像が設定されていません。")
+            return
+        } else {
+            // TODO realmで保存する処理を追加
+            messageAlert.shared.showSuccessMessage(title: "成功", body: "体の写真の保存に成功しました")
+            self.navigationController?.popViewController(animated: false)
+        }
+    }
+
     
     // MARK: TableView delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

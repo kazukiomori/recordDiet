@@ -19,6 +19,7 @@
 		3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */; };
 		3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
 		3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B94BBA129993E4B00228F88 /* BodyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA029993E4B00228F88 /* BodyImage.swift */; };
 		3BBB7A572992B518007D3730 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A562992B518007D3730 /* FoodListViewController.swift */; };
 		3BBB7A592992B564007D3730 /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A582992B564007D3730 /* FoodListTableViewCell.swift */; };
 		3BBB7A5B29967A51007D3730 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */; };
@@ -84,6 +85,7 @@
 		18A4A7652956B46F00464CB7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2CB690B4265A5467DC025CF8 /* Pods-recordDiet-recordDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDiet-recordDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-recordDiet-recordDietUITests/Pods-recordDiet-recordDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
+		3B94BBA029993E4B00228F88 /* BodyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImage.swift; sourceTree = "<group>"; };
 		3BBB7A562992B518007D3730 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
 		3BBB7A582992B564007D3730 /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
 		3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			children = (
 				3BBFF67E295DF3D80042187B /* Weight.swift */,
 				3BBB7A5C299691BB007D3730 /* FoodList.swift */,
+				3B94BBA029993E4B00228F88 /* BodyImage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				3BBB7A5B29967A51007D3730 /* FoodInputViewController.swift in Sources */,
 				3BBFF6872975B0610042187B /* AppDate.swift in Sources */,
 				3BBB7A592992B564007D3730 /* FoodListTableViewCell.swift in Sources */,
+				3B94BBA129993E4B00228F88 /* BodyImage.swift in Sources */,
 				3BBB7A5F2996DAD1007D3730 /* FoodListModel.swift in Sources */,
 				18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */,
 				3BBFF6882976EF0B0042187B /* TopViewController.swift in Sources */,
@@ -714,11 +718,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazukiomori.recordDiet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -743,11 +749,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazukiomori.recordDiet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -33,6 +33,7 @@ class WeightInputViewController: UIViewController {
             }).disposed(by: disposeBag)
     }
     
+    // datePickerで設定された日にちの体重をweightTextFieldに表示する
     func inputDate(date: String) {
         let weight = weightVM.fetchTheDayData(date: date)
         if weight == 0 {
