@@ -20,6 +20,8 @@
 		3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
 		3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B94BBA129993E4B00228F88 /* BodyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA029993E4B00228F88 /* BodyImage.swift */; };
+		3B94BBA3299976DE00228F88 /* BodyImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA2299976DE00228F88 /* BodyImageModel.swift */; };
+		3B94BBA5299977C400228F88 /* BodyImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA4299977C400228F88 /* BodyImageViewModel.swift */; };
 		3BBB7A572992B518007D3730 /* FoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A562992B518007D3730 /* FoodListViewController.swift */; };
 		3BBB7A592992B564007D3730 /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A582992B564007D3730 /* FoodListTableViewCell.swift */; };
 		3BBB7A5B29967A51007D3730 /* FoodInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */; };
@@ -86,6 +88,8 @@
 		2CB690B4265A5467DC025CF8 /* Pods-recordDiet-recordDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDiet-recordDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-recordDiet-recordDietUITests/Pods-recordDiet-recordDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		3B94BBA029993E4B00228F88 /* BodyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImage.swift; sourceTree = "<group>"; };
+		3B94BBA2299976DE00228F88 /* BodyImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImageModel.swift; sourceTree = "<group>"; };
+		3B94BBA4299977C400228F88 /* BodyImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImageViewModel.swift; sourceTree = "<group>"; };
 		3BBB7A562992B518007D3730 /* FoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewController.swift; sourceTree = "<group>"; };
 		3BBB7A582992B564007D3730 /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
 		3BBB7A5A29967A51007D3730 /* FoodInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInputViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 			children = (
 				3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */,
 				3BBB7A5E2996DAD1007D3730 /* FoodListModel.swift */,
+				3B94BBA2299976DE00228F88 /* BodyImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			children = (
 				3BBFF6822960A3EC0042187B /* WeightViewModel.swift */,
 				3BBB7A602996DF5F007D3730 /* FoodListViewModel.swift */,
+				3B94BBA4299977C400228F88 /* BodyImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -523,7 +529,9 @@
 				18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */,
 				3BBFF6882976EF0B0042187B /* TopViewController.swift in Sources */,
 				3BBFF67B295BFD4B0042187B /* WeightInputViewController.swift in Sources */,
+				3B94BBA5299977C400228F88 /* BodyImageViewModel.swift in Sources */,
 				3BBFF6832960A3EC0042187B /* WeightViewModel.swift in Sources */,
+				3B94BBA3299976DE00228F88 /* BodyImageModel.swift in Sources */,
 				3BBFF679295B7DF70042187B /* Extensions.swift in Sources */,
 				3BBB7A572992B518007D3730 /* FoodListViewController.swift in Sources */,
 				3BBB7A5D299691BB007D3730 /* FoodList.swift in Sources */,

@@ -11,5 +11,9 @@ import RealmSwift
 @objcMembers
 class BodyImage: Object {
     @objc dynamic var date: String = ""
-    @objc dynamic var imageURL: String = ""
+    @objc dynamic var imageData: Data?
+    
+    override static func primaryKey() -> String? {
+        return "date"
+    }
 }

@@ -32,11 +32,13 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     var date: String = ""
     var addBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var bodyImageView: UIImageView!
+    var bodyImage = BodyImageViewModel()
     
     // MARK: ライフサイクル
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItemSet()
+        self.setView()
+        
     }
     
     
@@ -49,6 +51,11 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
         present(imagePicker, animated: true)
     }
     
+    func setView() {
+        self.bodyImageView.image = self.bodyImage.fetchTheDayData(date: date)
+        self.navigationItemSet()
+    }
+    
     func navigationItemSet() {
         navigationItem.title = date
         addBarButtonItem = UIBarButtonItem(title: "保存", style: .done, target: self, action: #selector(addButtonTapped))
@@ -57,13 +64,13 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @objc func addButtonTapped() {
-        if bodyImageView.image == nil {
-            messageAlert.shared.showErrorMessage(title: "エラー", body: "画像が設定されていません。")
-            return
-        } else {
-            // TODO realmで保存する処理を追加
+        if bodyImageView.image != nil {
+            self.bodyImage.addData(date: date, image: bodyImageView.image!)
             messageAlert.shared.showSuccessMessage(title: "成功", body: "体の写真の保存に成功しました")
             self.navigationController?.popViewController(animated: false)
+        } else {
+            messageAlert.shared.showErrorMessage(title: "エラー", body: "画像が設定されていません。")
+            return
         }
     }
 
