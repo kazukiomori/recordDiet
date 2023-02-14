@@ -37,6 +37,7 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     var bodyImage = BodyImageViewModel()
     var foodList = FoodListViewModel()
     @IBOutlet weak var foodTableView: UITableView!
+    @IBOutlet weak var theDayCalorieLabel: UILabel!
     var theDayOfAllFoodList: [FoodList] = []
     
     // MARK: ライフサイクル
@@ -51,6 +52,7 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         dataLoad()
+        self.setView()
     }
     
     // MARK: メソッド
@@ -65,6 +67,11 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     func setView() {
         self.bodyImageView.image = self.bodyImage.fetchTheDayData(date: date)
         self.navigationItemSet()
+        var calorie = 0
+        for i in theDayOfAllFoodList {
+            calorie += i.calorie
+        }
+        self.theDayCalorieLabel.text = "\(date)の摂取カロリーは\(calorie)Kcalです"
     }
     
     func navigationItemSet() {
@@ -101,7 +108,7 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "listTableCell", for: indexPath) as? FoodListTableViewCell else { return UITableViewCell()}
         cell.timeLabel.text = theDayOfAllFoodList[indexPath.row].time
         cell.menuLabel.text = theDayOfAllFoodList[indexPath.row].menu
-        cell.calorieLabel.text = String(theDayOfAllFoodList[indexPath.row].calorie)
+        cell.calorieLabel.text = "\(String(theDayOfAllFoodList[indexPath.row].calorie))Kcal"
         return cell
     }
     
