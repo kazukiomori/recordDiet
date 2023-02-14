@@ -16,6 +16,7 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
             addMenuButton.rx.tap.subscribe (onNext :{ _ in
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
                 guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FoodInputViewController") as? FoodInputViewController else { return }
+                nextViewController.date = self.date
                 self.navigationController?.show(nextViewController, sender: nil)
             }).disposed(by: disposeBag)
         }
