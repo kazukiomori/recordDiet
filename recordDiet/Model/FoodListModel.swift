@@ -19,9 +19,8 @@ class FoodListModel {
     // RealmからFoodListを取得
     func getTheDayData(date: String) -> Results<FoodList> {
         let realm = try! Realm()
-        let food = FoodList()
         var results: Results<FoodList>
-        results = realm.objects(FoodList.self).filter("date == \(date)")
+        results = realm.objects(FoodList.self).where{($0.date == date)}
         return results
     }
 }

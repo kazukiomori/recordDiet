@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RealmSwift
 
 class FoodListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     private let disposeBag = DisposeBag()
@@ -34,14 +35,23 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     var addBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var bodyImageView: UIImageView!
     var bodyImage = BodyImageViewModel()
+    var foodList = FoodListViewModel()
+    @IBOutlet weak var foodTableView: UITableView!
+    var theDayOfAllFoodList: [FoodList] = []
     
     // MARK: ライフサイクル
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.foodTableView.delegate = self
+        self.foodTableView.dataSource = self
         self.setView()
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        dataLoad()
+    }
     
     // MARK: メソッド
     func addImageAction() {
@@ -64,6 +74,12 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationItem.rightBarButtonItems = [addBarButtonItem]
     }
     
+    func dataLoad() {
+        let allfoodList = foodList.fetchTheDayData(date: date)
+        self.theDayOfAllFoodList = allfoodList.sorted(by:{ $0.time < $1.time })
+        self.foodTableView.reloadData()
+    }
+    
     @objc func addButtonTapped() {
         if bodyImageView.image != nil {
             self.bodyImage.addData(date: date, image: bodyImageView.image!)
@@ -78,12 +94,19 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: TableView delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return theDayOfAllFoodList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "listTableCell", for: indexPath) as? FoodListTableViewCell else { return UITableViewCell()}
+        cell.timeLabel.text = theDayOfAllFoodList[indexPath.row].time
+        cell.menuLabel.text = theDayOfAllFoodList[indexPath.row].menu
+        cell.calorieLabel.text = String(theDayOfAllFoodList[indexPath.row].calorie)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
     func imagePickerController(_ imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

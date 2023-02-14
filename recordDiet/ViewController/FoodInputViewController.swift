@@ -46,8 +46,7 @@ class FoodInputViewController: UIViewController {
             datePicker.preferredDatePickerStyle = .wheels
         }
         
-        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
-        let dateToolBar = toolBar
+        let dateToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         let spacerItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
         let dateDoneItem = UIBarButtonItem(title: "決定", style: .done, target: self, action: #selector(timeSelect))
         dateToolBar.setItems([spacerItem, dateDoneItem], animated: true)
@@ -55,19 +54,25 @@ class FoodInputViewController: UIViewController {
         timeTextField.inputView = datePicker
         timeTextField.inputAccessoryView = dateToolBar
 
-        let menuToolBar = toolBar
+        let menuToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         let menuDoneItem = UIBarButtonItem(title: "決定", style: .done, target: self, action: #selector(menuSelect))
         menuToolBar.setItems([spacerItem, menuDoneItem], animated: true)
+        menuTextField.inputAccessoryView = menuToolBar
+        menuTextField.keyboardType = .webSearch
         
-        let calorieToolBar = toolBar
+        let calorieToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         let calorieDoneItem = UIBarButtonItem(title: "決定", style: .done, target: self, action: #selector(calorieSelect))
         calorieToolBar.setItems([spacerItem, calorieDoneItem], animated: true)
         
+        calorieTextField.inputAccessoryView = calorieToolBar
         calorieTextField.keyboardType = .numberPad
         
-        let memoToolBar = toolBar
+        let memoToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         let memoDoneItem = UIBarButtonItem(title: "決定", style: .done, target: self, action: #selector(memoSelect))
         memoToolBar.setItems([spacerItem, memoDoneItem], animated: true)
+        
+        memoTextField.inputAccessoryView = memoToolBar
+        memoTextField.keyboardType = .webSearch
     }
     
     /// timeTextFieldの値設定後に、datePickerの値をStringに変換してtextFieldに表示
@@ -115,25 +120,39 @@ class FoodInputViewController: UIViewController {
     }
     
     func saveButtonTapped() {
-        if self.timeTextField.text == "" {
+        
+        guard let timeStr = self.timeTextField.text, !timeStr.isEmpty else {
             messageAlert.shared.showErrorMessage(title: "エラー", body: "時間が設定されていません。")
             return
         }
         
-        // memuTextField内の文字数が0の場合は、エラーにしたいからオプショナルチェインで50を代入
-        if self.menuTextField.text?.count ?? 50 >= 50 {
+        guard let menuStr = self.menuTextField.text, !menuStr.isEmpty else {
             messageAlert.shared.showErrorMessage(title: "エラー", body: "メニューが設定されていません。")
             return
         }
+        if menuStr.count >= 50 {
+            messageAlert.shared.showErrorMessage(title: "エラー", body: "メニューは50文字以内で入力してください。")
+            return
+        }
         
-        if self.calorieTextField.text == nil {
+        guard let calorieStr = self.calorieTextField.text, !calorieStr.isEmpty else {
             messageAlert.shared.showErrorMessage(title: "エラー", body: "カロリーが設定されていません。")
             return
         }
-        // memoTextField内の文字数が0の場合は、OKにしたいからオプショナルチェインで0を代入
-        if self.memoTextField.text?.count ?? 0 >= 200 {
+        var calorieNum = Int(calorieStr)!
+        
+       if calorieNum >= 5000 {
+            messageAlert.shared.showErrorMessage(title: "エラー", body: "5000Kcal以下で設定してください。")
+            return
+        }
+        guard let memo = self.memoTextField.text, memo.count <= 200 else {
             messageAlert.shared.showErrorMessage(title: "エラー", body: "メモは200文字以内で入力してください。")
             return
         }
+        
+        foodViewModel.addData(time: timeStr, menu: menuStr, calorie: calorieNum, memo: memo, date: date)
+        
+        messageAlert.shared.showSuccessMessage(title: "成功", body: "メニューの保存に成功しました")
+        self.navigationController?.popViewController(animated: false)
     }
 }

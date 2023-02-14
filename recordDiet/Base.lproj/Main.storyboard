@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="maI-OV-OwK">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -371,6 +372,11 @@
                                                         <constraint firstItem="6H9-ha-TNd" firstAttribute="leading" secondItem="ehR-OS-USG" secondAttribute="leadingMargin" constant="10" id="x1X-9f-Isz"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="calorieLabel" destination="N0N-Mr-9nY" id="zdO-D1-TCZ"/>
+                                                    <outlet property="menuLabel" destination="6H9-ha-TNd" id="fFu-5T-OKM"/>
+                                                    <outlet property="timeLabel" destination="iXE-jo-Eh3" id="U6y-ve-yCf"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -433,6 +439,7 @@
                         <outlet property="addImageButton" destination="7bB-Cv-sWb" id="6kE-1g-9LO"/>
                         <outlet property="addMenuButton" destination="1M0-gj-0S0" id="60b-j8-JgR"/>
                         <outlet property="bodyImageView" destination="jiS-vy-ShI" id="Smh-ol-ddE"/>
+                        <outlet property="foodTableView" destination="RZB-Qr-q2O" id="yu1-qH-pSG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJv-ay-Mm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
