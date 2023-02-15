@@ -678,7 +678,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BB6FBCE4-4C1B-41BB-B363-B522B5C703A5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "recordDiet/ViewController/FoodListViewController.swift"
@@ -742,7 +742,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BD4C7386-C8BC-4DC7-8BCC-0E796A8067A5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "recordDiet/ViewController/FoodInputViewController.swift"

@@ -18,7 +18,6 @@
 		18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A7652956B46F00464CB7 /* CalendarViewController.swift */; };
 		3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */; };
 		3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
-		3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B94BBA129993E4B00228F88 /* BodyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA029993E4B00228F88 /* BodyImage.swift */; };
 		3B94BBA3299976DE00228F88 /* BodyImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA2299976DE00228F88 /* BodyImageModel.swift */; };
 		3B94BBA5299977C400228F88 /* BodyImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA4299977C400228F88 /* BodyImageViewModel.swift */; };
@@ -55,20 +54,6 @@
 			remoteInfo = recordDiet;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3B7E1DAF298EEE98000B1902 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3B7E1DAE298EEE98000B1902 /* Pods_recordDiet.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18A4A72F294E1CD000464CB7 /* recordDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recordDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,7 +278,6 @@
 				18A4A72C294E1CD000464CB7 /* Frameworks */,
 				18A4A72D294E1CD000464CB7 /* Resources */,
 				41D7AAFF8465D1D7CFEEC549 /* [CP] Embed Pods Frameworks */,
-				3B7E1DAF298EEE98000B1902 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

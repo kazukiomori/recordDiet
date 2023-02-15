@@ -58,8 +58,8 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     // MARK: メソッド
     func addImageAction() {
         let imagePicker = UIImagePickerController()
-        // imagePicker.sourceType = .camera はシミュレーターでは使えない
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
+//        imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
         present(imagePicker, animated: true)
     }

@@ -57,6 +57,15 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
 
         // 土日や祝日の日の文字色を変える
         func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleDefaultColorFor date: Date) -> UIColor? {
+            
+            // カレンダーのヘッダーの年月を日本語表示
+            calendar.appearance.headerDateFormat = "yyyy年MM月"
+            
+            // カレンダーの曜日を日本語表示
+            let JapaneseWeek = ["日","月","火","水","木","金","土"]
+            for i in 0..<JapaneseWeek.count {
+                calendar.calendarWeekdayView.weekdayLabels[i].text = JapaneseWeek[i]
+            }
             //祝日判定をする（祝日は赤色で表示する）
             if self.judgeHoliday(date){
                 return UIColor.red
