@@ -45,6 +45,7 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         self.foodTableView.delegate = self
         self.foodTableView.dataSource = self
+        self.bodyImageView.image = self.bodyImage.fetchTheDayData(date: date)
         self.setView()
         
     }
@@ -57,15 +58,16 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     
     // MARK: メソッド
     func addImageAction() {
-        let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .camera
-//        imagePicker.sourceType = .photoLibrary
-        imagePicker.delegate = self
-        present(imagePicker, animated: true)
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .camera
+            imagePicker.delegate = self
+            present(imagePicker, animated: true)
+        }
+        
     }
     
     func setView() {
-        self.bodyImageView.image = self.bodyImage.fetchTheDayData(date: date)
         self.navigationItemSet()
         var calorie = 0
         for i in theDayOfAllFoodList {
@@ -116,9 +118,11 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
+    
+    
     func imagePickerController(_ imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
-            bodyImageView.image = pickedImage
+            bodyImageView.image = pickedImage.resized(size: CGSize(width: 250, height: 120))
         }
         dismiss(animated: false)
     }
