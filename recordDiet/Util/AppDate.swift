@@ -39,6 +39,8 @@ class AppDate: NSObject {
     
     func strDate(date: String) -> Date {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
         if let result = dateFormatStr().date(from: date) {
             return result
         } else {
@@ -49,6 +51,7 @@ class AppDate: NSObject {
     func dateFormatStr() -> DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = Calendar(identifier: .gregorian)
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale
         dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
         return dateFormatter
     }

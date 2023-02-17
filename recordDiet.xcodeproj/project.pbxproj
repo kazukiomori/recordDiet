@@ -705,6 +705,9 @@
 				DEVELOPMENT_TEAM = 596D95CQ24;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = recordDiet/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "毎日の体の変化を記録するためにカメラを使用します。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "毎日の体の変化を記録するためにフォトライブラリを使用します。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "毎日の体の変化を記録するためにフォトライブラリを使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -736,6 +739,9 @@
 				DEVELOPMENT_TEAM = 596D95CQ24;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = recordDiet/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "毎日の体の変化を記録するためにカメラを使用します。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "毎日の体の変化を記録するためにフォトライブラリを使用します。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "毎日の体の変化を記録するためにフォトライブラリを使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
