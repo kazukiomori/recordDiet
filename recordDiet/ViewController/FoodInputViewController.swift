@@ -26,6 +26,7 @@ class FoodInputViewController: UIViewController {
     
     var datePicker: UIDatePicker = UIDatePicker()
     var date: String = ""
+    var foodMenu: String = ""
     
     let disposeBag = DisposeBag()
     let foodViewModel = FoodListViewModel()
@@ -73,6 +74,27 @@ class FoodInputViewController: UIViewController {
         
         memoTextField.inputAccessoryView = memoToolBar
         memoTextField.keyboardType = .webSearch
+        
+        self.inputDate(date: self.date)
+    }
+    
+    func inputDate(date: String) {
+        let food = foodViewModel.fetchTheDayFood(date: date, food: self.foodMenu)
+        if foodMenu == "" {
+            timeTextField.placeholder = "時間を入力してください"
+            menuTextField.placeholder = "メニューを入力してください"
+            calorieTextField.placeholder = "カロリーを入力してください"
+        } else {
+            timeTextField.text = "\(food.time)"
+            menuTextField.text = "\(food.menu)"
+            calorieTextField.text = "\(food.calorie)"
+        }
+        
+        if food.memo == "" {
+            memoTextField.placeholder = "メモを入力してください"
+        } else {
+            memoTextField.text = "\(food.memo)"
+        }
     }
     
     /// timeTextFieldの値設定後に、datePickerの値をStringに変換してtextFieldに表示

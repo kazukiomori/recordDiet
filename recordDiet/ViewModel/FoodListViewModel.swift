@@ -28,6 +28,17 @@ class FoodListViewModel {
         return foodList
     }
     
+    func fetchTheDayFood(date: String, food: String) -> FoodList {
+        let results = model.getTheDayData(date: date)
+        var food = FoodList()
+        for result in results {
+            if result.date == date {
+                food = result
+            }
+        }
+        return food
+    }
+    
     
     // viewで入力した値をFoodList型の変数にまとめて、FoodListModelでrealmに保存する
     func addData(time: String, menu: String, calorie: Int, memo: String, date: String){

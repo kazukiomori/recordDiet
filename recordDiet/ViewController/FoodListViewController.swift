@@ -116,6 +116,12 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FoodInputViewController") as? FoodInputViewController else { return }
+        nextViewController.date = self.date
+        nextViewController.foodMenu = theDayOfAllFoodList[indexPath.row].menu
+        self.navigationController?.show(nextViewController, sender: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
