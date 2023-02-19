@@ -118,7 +118,6 @@ class WeightInputViewController: UIViewController {
         let date = dateTextField.text!
         let dateStr = AppDate().dateDate(string: date, format1: "yyyy年MM月dd日", format2: "yyyy/MM/dd")
         self.inputDate(date: dateStr)
-        
     }
     
     @objc func dateSelect() {
