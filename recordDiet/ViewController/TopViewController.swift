@@ -43,23 +43,25 @@ class TopViewController: UIViewController, ChartViewDelegate {
         
         // セグメントの設定を0にして、週のチャートを表示する
         segment.selectedSegmentIndex = 0
-//        let realm = try! Realm()
-//        try! realm.write{
-//            realm.deleteAll()
-//        }
+        self.loadChart()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+            self.loadChart()
+        }
+    }
+    
+    func loadChart() {
         if self.graphMode != .Week {
-            self .changeGraph(mode: .Week)
+            self.changeGraph(mode: .Week)
         } else {
             self.graphMode = .Week
             self.dataLoad()
             self.createData()
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        NotificationCenter.default.post(name: .graphViewShow, object: nil)
-//        self.createData()
     }
     
     // セグメントの切り替えで、体重のチャートを週表示、月表示に変更
@@ -72,6 +74,11 @@ class TopViewController: UIViewController, ChartViewDelegate {
         if (self.graphMode == mode) {
             
         } else {
+            if mode == .Week {
+                segment.selectedSegmentIndex = 0
+            } else {
+                segment.selectedSegmentIndex = 1
+            }
             self.graphMode = mode
             self.lastDate = Date()
             self.createData()
@@ -102,37 +109,26 @@ class TopViewController: UIViewController, ChartViewDelegate {
     }
     
     func createWeekList() {
-        var temDate = self.lastDate
+        var weekDateArray: [Weight] = []
+        let endDateStr = AppDate().toStringWithCurrentLocale(date: self.lastDate)
+        var endDate = AppDate().strDate(date: endDateStr)
         
-//        for _ in 0..<6 {
-            var weekDateArray: [Weight] = []
-            let endDateStr = AppDate().toStringWithCurrentLocale(date: self.lastDate)
-            var endDate = AppDate().strDate(date: endDateStr)
+        for date in AppDate().pastWeek(lastGetDate: self.lastDate) {
             
-            for date in AppDate().pastWeek(lastGetDate: self.lastDate) {
-                
-                for weight in allWeightList {
-                    if(weight.dateSt == AppDate().dateStrOnlyDate(date: date)) {
-                        weekDateArray.append(weight)
-                    }
+            for weight in allWeightList {
+                if(weight.dateSt == AppDate().dateStrOnlyDate(date: date)) {
+                    weekDateArray.append(weight)
                 }
-                endDate = date
             }
-            var weightGraph = weightGraph(dateSt: AppDate().dateStrOnlyDate(date: Date()), totalWeight: 0, averageWeight: 0, graphMode: .Week)
-            weightGraph.dataArray = weekDateArray
-            
-            self.chartSet(weightGraph: weightGraph)
-            temDate = endDate
-            self.lastDate = AppDate().lastGetDate(date: temDate)
-//        }
+        }
+        var weightGraph = weightGraph(dateSt: AppDate().dateStrOnlyDate(date: Date()), totalWeight: 0, averageWeight: 0, graphMode: .Week)
+        weightGraph.dataArray = weekDateArray
+        self.chartSet(weightGraph: weightGraph)
     }
     
     func createMonthList() {
         var temDate = lastDate
-        //
-        //        for _ in 0..<6 {
         var monthDateArray: [Weight] = []
-        let startDate = self.lastDate
         var endDate = self.lastDate
         
         for date in AppDate().pastMonth(lastGetDate: self.lastDate) {
@@ -142,15 +138,11 @@ class TopViewController: UIViewController, ChartViewDelegate {
                     monthDateArray.append(weight)
                 }
             }
-            endDate = date
         }
         var weightGraph = weightGraph(dateSt: AppDate().dateStrOnlyDate(date: Date()), totalWeight: 0, averageWeight: 0, graphMode: .Month)
         weightGraph.dataArray = monthDateArray
     
         self.chartSet(weightGraph: weightGraph)
-        temDate = endDate
-        self.lastDate = AppDate().lastGetDate(date: temDate)
-        //        }
     }
     
     func chartSet(weightGraph: weightGraph) {
@@ -175,8 +167,9 @@ class TopViewController: UIViewController, ChartViewDelegate {
             break
         }
         
+        dataSet.drawCirclesEnabled = false
         dataSet.drawIconsEnabled = false
-        dataSet.lineWidth = 1
+        dataSet.lineWidth = 3
         dataSet.formLineWidth = 1
         dataSet.formSize = 15
         
@@ -199,6 +192,7 @@ class TopViewController: UIViewController, ChartViewDelegate {
         
         lineChartView.xAxis.valueFormatter = model.formatter
         lineChartView.xAxis.labelCount = labelCount
+        lineChartView.xAxis.drawGridLinesEnabled = false
         lineChartView.leftAxis.labelCount = 3
         lineChartView.dragEnabled = false
         lineChartView.dragXEnabled = false
@@ -206,7 +200,6 @@ class TopViewController: UIViewController, ChartViewDelegate {
         lineChartView.doubleTapToZoomEnabled = false
         lineChartView.setVisibleXRange(minXRange: Double(labelCount), maxXRange: Double(labelCount))
         lineChartView.legend.enabled = false
-        
         lineChartView.animate(xAxisDuration: 1, yAxisDuration: 1)
     }
 }
