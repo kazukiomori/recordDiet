@@ -24,4 +24,5 @@ target 'recordDiet' do
   pod 'CalculateCalendarLogic'
   pod 'SwiftMessages'
   pod 'SwiftDate'
+  pod 'Google-Mobile-Ads-SDK'
 end

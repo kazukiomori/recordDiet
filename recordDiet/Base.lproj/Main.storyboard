@@ -230,19 +230,30 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbu-7a-V1I" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="740" width="390" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="qHr-q0-tml"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MJg-lK-7Iz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MJg-lK-7Iz" firstAttribute="trailing" secondItem="166-Vc-GS0" secondAttribute="trailing" constant="10" id="4vy-5m-UBf"/>
                             <constraint firstItem="sdl-AX-1Xk" firstAttribute="top" secondItem="166-Vc-GS0" secondAttribute="bottom" constant="20" id="7w0-hf-8sc"/>
+                            <constraint firstItem="MJg-lK-7Iz" firstAttribute="trailing" secondItem="bbu-7a-V1I" secondAttribute="trailing" id="ELo-AC-fcj"/>
                             <constraint firstItem="MJg-lK-7Iz" firstAttribute="trailing" secondItem="sdl-AX-1Xk" secondAttribute="trailing" constant="10" id="Jvr-l5-PqK"/>
+                            <constraint firstItem="bbu-7a-V1I" firstAttribute="leading" secondItem="MJg-lK-7Iz" secondAttribute="leading" id="QDX-HB-yFm"/>
                             <constraint firstItem="166-Vc-GS0" firstAttribute="leading" secondItem="MJg-lK-7Iz" secondAttribute="leading" constant="10" id="Txy-Ji-CSp"/>
                             <constraint firstItem="166-Vc-GS0" firstAttribute="top" secondItem="MJg-lK-7Iz" secondAttribute="top" constant="30" id="e6f-hv-ASJ"/>
                             <constraint firstItem="sdl-AX-1Xk" firstAttribute="leading" secondItem="MJg-lK-7Iz" secondAttribute="leading" constant="10" id="nlI-AQ-pq4"/>
+                            <constraint firstItem="bbu-7a-V1I" firstAttribute="bottom" secondItem="MJg-lK-7Iz" secondAttribute="bottom" id="sKu-mT-O4k"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="bbu-7a-V1I" id="Yfa-So-weH"/>
                         <outlet property="dateTextField" destination="3Fb-P8-odb" id="1CB-rf-8mu"/>
                         <outlet property="weightTextField" destination="geu-38-zo1" id="WQo-af-wau"/>
                     </connections>
@@ -295,11 +306,21 @@
                                     <outlet property="delegate" destination="d3r-BH-5IK" id="IHL-8X-xuz"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTA-43-s6J" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="691" width="390" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OLj-C0-IwT"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QIz-O9-qko"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QIz-O9-qko" firstAttribute="trailing" secondItem="ZTA-43-s6J" secondAttribute="trailing" id="5Cr-b1-sIE"/>
                             <constraint firstItem="QIz-O9-qko" firstAttribute="trailing" secondItem="rn6-hZ-9sB" secondAttribute="trailing" constant="10" id="7ia-rI-rMq"/>
+                            <constraint firstItem="ZTA-43-s6J" firstAttribute="bottom" secondItem="QIz-O9-qko" secondAttribute="bottom" id="9em-YP-ikC"/>
+                            <constraint firstItem="ZTA-43-s6J" firstAttribute="leading" secondItem="QIz-O9-qko" secondAttribute="leading" id="BNg-fK-lvz"/>
                             <constraint firstItem="rn6-hZ-9sB" firstAttribute="top" secondItem="QIz-O9-qko" secondAttribute="top" id="GsH-Rt-b7Z"/>
                             <constraint firstItem="rn6-hZ-9sB" firstAttribute="leading" secondItem="QIz-O9-qko" secondAttribute="leading" constant="10" id="Utt-Be-XjQ"/>
                         </constraints>
@@ -307,6 +328,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="wQe-gu-eIu"/>
                     <navigationItem key="navigationItem" id="mJv-ax-doJ"/>
                     <connections>
+                        <outlet property="bannerView" destination="ZTA-43-s6J" id="Goa-gT-HS1"/>
                         <outlet property="calendar" destination="rn6-hZ-9sB" id="GVc-Ug-P6J"/>
                     </connections>
                 </viewController>

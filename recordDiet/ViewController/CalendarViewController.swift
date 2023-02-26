@@ -8,10 +8,12 @@
 import UIKit
 import FSCalendar
 import CalculateCalendarLogic
+import GoogleMobileAds
 
 class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance{
     
     @IBOutlet weak var calendar: FSCalendar!
+    @IBOutlet weak var bannerView: GADBannerView!
     let gregorian: Calendar = Calendar(identifier: .gregorian)
     lazy var dateFormatter: DateFormatter = {
             let formatter = DateFormatter()
@@ -23,6 +25,9 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         super.viewDidLoad()
         self.calendar.dataSource = self
         self.calendar.delegate = self
+        bannerView.adUnitID = "ca-app-pub-9554476195266174/3096845128"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     
     // 祝日判定を行い結果を返すメソッド(True:祝日)

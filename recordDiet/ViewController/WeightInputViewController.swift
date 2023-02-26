@@ -8,11 +8,13 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import GoogleMobileAds
 
 class WeightInputViewController: UIViewController {
  
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var weightTextField: UITextField!
+    @IBOutlet weak var bannerView: GADBannerView!
     var dateStValue: String = ""
     var datePicker: UIDatePicker = UIDatePicker()
     var cancelButtonItem: UIBarButtonItem!
@@ -31,6 +33,10 @@ class WeightInputViewController: UIViewController {
                 let dateStr = AppDate().dateDate(string: self.dateTextField.text!, format1: "yyyy年MM月dd日", format2: "yyyy/MM/dd")
                 self.inputDate(date: dateStr)
             }).disposed(by: disposeBag)
+        
+        bannerView.adUnitID = "ca-app-pub-9554476195266174/3096845128"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     
     // datePickerで設定された日にちの体重をweightTextFieldに表示する
