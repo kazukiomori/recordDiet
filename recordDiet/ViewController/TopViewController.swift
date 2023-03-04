@@ -42,6 +42,7 @@ class TopViewController: UIViewController, ChartViewDelegate {
         // データベースから全期間のデータを取ってくる
         
         // セグメントの設定を0にして、週のチャートを表示する
+        lineChartView.delegate = self
         segment.selectedSegmentIndex = 0
         self.loadChart()
         
@@ -201,6 +202,12 @@ class TopViewController: UIViewController, ChartViewDelegate {
         lineChartView.setVisibleXRange(minXRange: Double(labelCount), maxXRange: Double(labelCount))
         lineChartView.legend.enabled = false
         lineChartView.animate(xAxisDuration: 1, yAxisDuration: 1)
+    }
+    
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        if let entry = entry as? ChartDataEntry {
+            weightNumberLabel.text = "\(entry.y)"
+        }
     }
 }
 
