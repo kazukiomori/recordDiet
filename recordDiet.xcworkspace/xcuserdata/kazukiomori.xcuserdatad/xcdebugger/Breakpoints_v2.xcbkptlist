@@ -14,8 +14,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "TopViewController"
             landmarkType = "3">
             <Locations>
@@ -78,8 +78,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "createData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "createData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "createWeekList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "createWeekList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "dataLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
             landmarkName = "getRawData(weightGraph:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +350,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "createWeekList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -492,8 +492,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "selectIndex(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -508,8 +508,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "selectIndex(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -524,8 +524,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "createMonthList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -540,8 +540,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "dataLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -940,8 +940,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "createData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -956,8 +956,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "changeGraph(mode:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -972,8 +972,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "changeGraph(mode:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -988,8 +988,8 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "createMonthList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1004,9 +1004,105 @@
             filePath = "recordDiet/ViewController/TopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "chartValueSelected(_:entry:highlight:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "146CDC80-19BB-4598-8869-E438CFDEA0EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recordDiet/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "requestAppTrackingTransparencyAuthorization()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CE2C9DB-9CD0-44C4-9096-5646D99AA93F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recordDiet/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "requestAppTrackingTransparencyAuthorization()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7CE2C9DB-9CD0-44C4-9096-5646D99AA93F - 4de1ceb0df1d5322"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recordDiet.AppDelegate.requestAppTrackingTransparencyAuthorization() -&gt; ()"
+                  moduleName = "recordDiet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/recordDiet/recordDiet/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "7CE2C9DB-9CD0-44C4-9096-5646D99AA93F - fb06e453e960b130"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.ATTrackingManagerAuthorizationStatus) -&gt; () in recordDiet.AppDelegate.requestAppTrackingTransparencyAuthorization() -&gt; ()"
+                  moduleName = "recordDiet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/recordDiet/recordDiet/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "117C751B-D24C-4418-BC19-8607FAA8D0E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recordDiet/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "requestAppTrackingTransparencyAuthorization()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D6FAAD4-BAB9-410E-BE91-34343E3EC354"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recordDiet/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "applicationDidBecomeActive(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
