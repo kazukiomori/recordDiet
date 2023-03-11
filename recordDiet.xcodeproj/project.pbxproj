@@ -16,8 +16,10 @@
 		18A4A754294E1D0D00464CB7 /* recordDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A753294E1D0D00464CB7 /* recordDietUITests.swift */; };
 		18A4A756294E1D0D00464CB7 /* recordDietUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A755294E1D0D00464CB7 /* recordDietUITestsLaunchTests.swift */; };
 		18A4A7662956B46F00464CB7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A4A7652956B46F00464CB7 /* CalendarViewController.swift */; };
+		3B3A5BEC29BC370200ED1B5C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A5BEB29BC370100ED1B5C /* AdSupport.framework */; };
+		3B3A5BEF29BC38C500ED1B5C /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A5BED29BC373300ED1B5C /* AppTrackingTransparency.framework */; };
+		3B3A5BF229BC38CA00ED1B5C /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
 		3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */; };
-		3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
 		3B94BBA129993E4B00228F88 /* BodyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA029993E4B00228F88 /* BodyImage.swift */; };
 		3B94BBA3299976DE00228F88 /* BodyImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA2299976DE00228F88 /* BodyImageModel.swift */; };
 		3B94BBA5299977C400228F88 /* BodyImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA4299977C400228F88 /* BodyImageViewModel.swift */; };
@@ -71,6 +73,8 @@
 		18A4A755294E1D0D00464CB7 /* recordDietUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordDietUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18A4A7652956B46F00464CB7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2CB690B4265A5467DC025CF8 /* Pods-recordDiet-recordDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDiet-recordDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-recordDiet-recordDietUITests/Pods-recordDiet-recordDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3A5BEB29BC370100ED1B5C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3B3A5BED29BC373300ED1B5C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		3B94BBA029993E4B00228F88 /* BodyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImage.swift; sourceTree = "<group>"; };
 		3B94BBA2299976DE00228F88 /* BodyImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImageModel.swift; sourceTree = "<group>"; };
@@ -102,7 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B7E1DAD298EEE98000B1902 /* Pods_recordDiet.framework in Frameworks */,
+				3B3A5BF229BC38CA00ED1B5C /* Pods_recordDiet.framework in Frameworks */,
+				3B3A5BEF29BC38C500ED1B5C /* AppTrackingTransparency.framework in Frameworks */,
+				3B3A5BEC29BC370200ED1B5C /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,8 @@
 		806138EB84FA35E28E58AE86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B3A5BED29BC373300ED1B5C /* AppTrackingTransparency.framework */,
+				3B3A5BEB29BC370100ED1B5C /* AdSupport.framework */,
 				98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */,
 				C983D865258809112152129B /* Pods_recordDiet_recordDietUITests.framework */,
 				A73788522972EDCAEFC74443 /* Pods_recordDietTests.framework */,

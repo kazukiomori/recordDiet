@@ -8,8 +8,6 @@
 import UIKit
 import RealmSwift
 import GoogleMobileAds
-import AppTrackingTransparency
-import AdSupport
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,14 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        // Override point for customization after application launch.
+        
         return true
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
-            ATTrackingManager.requestTrackingAuthorization { _ in }
-        }
     }
     
 
@@ -45,14 +37,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    private func requestAppTrackingTransparencyAuthorization() {
-        if #available(iOS 14.5, *) {
-            guard ATTrackingManager.trackingAuthorizationStatus == .notDetermined else { return }
-            // タイミングを遅らせる為に処理を遅延させる
-            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
-                // リクエスト後の状態に応じた処理を行う
-            })
-        }
-    }
 }
 

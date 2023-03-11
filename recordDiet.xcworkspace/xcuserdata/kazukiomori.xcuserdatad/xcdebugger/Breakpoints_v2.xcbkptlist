@@ -1013,15 +1013,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "146CDC80-19BB-4598-8869-E438CFDEA0EC"
+            uuid = "00E1FDF4-5D48-446C-A58E-5349772FE9C7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recordDiet/AppDelegate.swift"
+            filePath = "recordDiet/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "sceneDidBecomeActive(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1E017D3-93A9-42E8-9056-66DB2E77C310"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recordDiet/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "requestAppTrackingTransparencyAuthorization()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1029,59 +1045,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7CE2C9DB-9CD0-44C4-9096-5646D99AA93F"
+            uuid = "D86556B1-3EB3-4E5D-8C54-417DD327E108"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recordDiet/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "requestAppTrackingTransparencyAuthorization()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7CE2C9DB-9CD0-44C4-9096-5646D99AA93F - 4de1ceb0df1d5322"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "recordDiet.AppDelegate.requestAppTrackingTransparencyAuthorization() -&gt; ()"
-                  moduleName = "recordDiet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kazukiomori/Desktop/recordDiet/recordDiet/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  uuid = "7CE2C9DB-9CD0-44C4-9096-5646D99AA93F - fb06e453e960b130"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.ATTrackingManagerAuthorizationStatus) -&gt; () in recordDiet.AppDelegate.requestAppTrackingTransparencyAuthorization() -&gt; ()"
-                  moduleName = "recordDiet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kazukiomori/Desktop/recordDiet/recordDiet/AppDelegate.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "117C751B-D24C-4418-BC19-8607FAA8D0E5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "recordDiet/AppDelegate.swift"
+            filePath = "recordDiet/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -1093,17 +1061,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D6FAAD4-BAB9-410E-BE91-34343E3EC354"
+            uuid = "642C20CC-5788-4E32-A603-458A8B6CE5A1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recordDiet/AppDelegate.swift"
+            filePath = "recordDiet/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "applicationDidBecomeActive(_:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "requestAppTrackingTransparencyAuthorization()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "642C20CC-5788-4E32-A603-458A8B6CE5A1 - af9a80f6e5f7a525"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in recordDiet.SceneDelegate.requestAppTrackingTransparencyAuthorization() -&gt; ()"
+                  moduleName = "recordDiet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/recordDiet/recordDiet/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "642C20CC-5788-4E32-A603-458A8B6CE5A1 - fd3c5b34c058e02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.ATTrackingManagerAuthorizationStatus) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in recordDiet.SceneDelegate.requestAppTrackingTransparencyAuthorization() -&gt; ()"
+                  moduleName = "recordDiet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazukiomori/Desktop/recordDiet/recordDiet/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
