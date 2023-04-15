@@ -34,7 +34,7 @@ class WeightInputViewController: UIViewController {
                 self.inputDate(date: dateStr)
             }).disposed(by: disposeBag)
         
-        bannerView.adUnitID = "ca-app-pub-9554476195266174/3096845128"
+        bannerView.adUnitID = "ca-app-pub-3293568654583905/4911273024"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
     }

@@ -25,7 +25,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
         super.viewDidLoad()
         self.calendar.dataSource = self
         self.calendar.delegate = self
-        bannerView.adUnitID = "ca-app-pub-9554476195266174/3096845128"
+        bannerView.adUnitID = "ca-app-pub-3293568654583905/4911273024"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
     }
