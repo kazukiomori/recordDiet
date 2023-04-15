@@ -1,0 +1,87 @@
+
+/* Class = "UILabel"; text = "体重"; ObjectID = "0V3-Ll-gO7"; */
+"0V3-Ll-gO7.text" = "体重";
+
+/* Class = "UIButton"; configuration.title = "食事内容を追加"; ObjectID = "1M0-gj-0S0"; */
+"1M0-gj-0S0.configuration.title" = "食事内容を追加";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1M0-gj-0S0"; */
+"1M0-gj-0S0.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "保存"; ObjectID = "1xP-UH-UHs"; */
+"1xP-UH-UHs.configuration.title" = "保存";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1xP-UH-UHs"; */
+"1xP-UH-UHs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "メモ"; ObjectID = "5fB-Ur-DwQ"; */
+"5fB-Ur-DwQ.text" = "メモ";
+
+/* Class = "UILabel"; text = "食事内容"; ObjectID = "6H9-ha-TNd"; */
+"6H9-ha-TNd.text" = "食事内容";
+
+/* Class = "UIButton"; configuration.title = "体の写真を追加"; ObjectID = "7bB-Cv-sWb"; */
+"7bB-Cv-sWb.configuration.title" = "体の写真を追加";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7bB-Cv-sWb"; */
+"7bB-Cv-sWb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "摂取カロリー"; ObjectID = "N0N-Mr-9nY"; */
+"N0N-Mr-9nY.text" = "摂取カロリー";
+
+/* Class = "UILabel"; text = "メニュー"; ObjectID = "Urp-TW-QZC"; */
+"Urp-TW-QZC.text" = "メニュー";
+
+/* Class = "UISegmentedControl"; Vpo-CN-zQc.segmentTitles[0] = "週"; ObjectID = "Vpo-CN-zQc"; */
+"Vpo-CN-zQc.segmentTitles[0]" = "週";
+
+/* Class = "UISegmentedControl"; Vpo-CN-zQc.segmentTitles[1] = "月"; ObjectID = "Vpo-CN-zQc"; */
+"Vpo-CN-zQc.segmentTitles[1]" = "月";
+
+/* Class = "UILabel"; text = "kg"; ObjectID = "XD6-on-LDm"; */
+"XD6-on-LDm.text" = "kg";
+
+/* Class = "UILabel"; text = "時間"; ObjectID = "XkD-ic-rVY"; */
+"XkD-ic-rVY.text" = "時間";
+
+/* Class = "UIButton"; configuration.title = "削除"; ObjectID = "d6T-Dx-D9f"; */
+"d6T-Dx-D9f.configuration.title" = "削除";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "d6T-Dx-D9f"; */
+"d6T-Dx-D9f.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "体重"; ObjectID = "eiq-Sd-acW"; */
+"eiq-Sd-acW.title" = "体重";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fy9-qa-w8H"; */
+"fy9-qa-w8H.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "カレンダー"; ObjectID = "gez-lb-ZLI"; */
+"gez-lb-ZLI.title" = "カレンダー";
+
+/* Class = "UILabel"; text = "11:30"; ObjectID = "iXE-jo-Eh3"; */
+"iXE-jo-Eh3.text" = "11:30";
+
+/* Class = "UILabel"; text = "カロリー"; ObjectID = "kSY-nx-Sx6"; */
+"kSY-nx-Sx6.text" = "カロリー";
+
+/* Class = "UILabel"; text = "日付"; ObjectID = "lNQ-9f-3Aw"; */
+"lNQ-9f-3Aw.text" = "日付";
+
+/* Class = "UILabel"; text = "体重/ Kg"; ObjectID = "mST-Hv-fka"; */
+"mST-Hv-fka.text" = "体重/ Kg";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "puR-X6-j1k"; */
+"puR-X6-j1k.text" = "0";
+
+/* Class = "UIButton"; configuration.title = "記録する"; ObjectID = "qv9-SR-LTe"; */
+"qv9-SR-LTe.configuration.title" = "記録する";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qv9-SR-LTe"; */
+"qv9-SR-LTe.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "v8N-0I-Akt"; */
+"v8N-0I-Akt.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "wQe-gu-eIu"; */
+"wQe-gu-eIu.title" = "Item";

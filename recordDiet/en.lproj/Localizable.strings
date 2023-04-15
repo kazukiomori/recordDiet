@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  recordDiet
+
+  Created by Kazuki Omori on 2023/04/16.
+  
+*/
+// TopViewController
+"sunday" = "Sunday";
+"monday" = "Monday";
+"tuesday" = "Tuesday";
+"wednesday" = "Wednesday";
+"tursday" = "Tursday";
+"friday" = "Friday";
+"saturday" = "Saturday";
+"date" = "";
+
+// CalendarViewController
+"wsunday" = "Sun";
+"wmonday" = "Mon";
+"wtuesday" = "Tue";
+"wwednesday" = "Wed";
+"wtursday" = "Tur";
+"wfriday" = "Fri";
+"wsaturday" = "Sat";
+
+// WeightInputViewController
+"enterYourWeight" = "Enter your weight";
+"cancel" = "Cancel";
+"save" = "Save";
+"error" = "Error";
+"notEnteredDate" = "No date entered";
+"successfullySavedWeight" = "Successfully saved weight";
+"notEnteresWeight" = "No weight entered";
+"decision" = "OK";
+
+// FoodListViewController
+"@theDayCalorie%ll" = "@ Total Calorie is %lld";
+"successfullySavedPhotosOfTheBody" = "Successfully saved photos of the body.";
+"imageIsNotSet" = "Image is not set.";
+
+// FoodInputViewController
+"pleaseEnteraTime" = "Please enter a time";
+"pleaseEnteraMenu" = "Please enter menu";
+"pleaseEnteraCalorie" = "Please enter a calorie";
+"pleaseEnteraMemo" = "Please enter memo";
+"timeIsNotSet" = "Time is not set";
+"menuIsNotSet" = "Menu is not set";
+"pleaseEnterUpTo50CharactersForTheMenu" = "Please enter up to 50 characters for the menu";
+"calorieIsNotSet" = "Calorie is not set";
+"setAt5000KcalOrLess" = "Set at 5000 Kcal or less";
+"pleaseEnterUpTo200CharactersForTheMemo" = "Please enter up to 200 characters for the memo";
+"successfullySavedMenu" = "Successfully saved menu";

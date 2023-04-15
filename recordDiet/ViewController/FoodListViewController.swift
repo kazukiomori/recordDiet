@@ -73,12 +73,12 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
         for i in theDayOfAllFoodList {
             calorie += i.calorie
         }
-        self.theDayCalorieLabel.text = "\(date)の摂取カロリーは\(calorie)Kcalです"
+        self.theDayCalorieLabel.text = NSLocalizedString("\(date)theDayCalorie\(calorie)", comment: "")
     }
     
     func navigationItemSet() {
         navigationItem.title = date
-        addBarButtonItem = UIBarButtonItem(title: "保存", style: .done, target: self, action: #selector(addButtonTapped))
+        addBarButtonItem = UIBarButtonItem(title: NSLocalizedString("save", comment: ""), style: .done, target: self, action: #selector(addButtonTapped))
         addBarButtonItem.tintColor = .black
         self.navigationItem.rightBarButtonItems = [addBarButtonItem]
     }
@@ -92,10 +92,10 @@ class FoodListViewController: UIViewController, UITableViewDelegate, UITableView
     @objc func addButtonTapped() {
         if bodyImageView.image != nil {
             self.bodyImage.addData(date: date, image: bodyImageView.image!)
-            messageAlert.shared.showSuccessMessage(title: "成功", body: "体の写真の保存に成功しました")
+            messageAlert.shared.showSuccessMessage(title: NSLocalizedString("success", comment: ""), body: NSLocalizedString("successfullySavedPhotosOfTheBody", comment: ""))
             self.navigationController?.popViewController(animated: false)
         } else {
-            messageAlert.shared.showErrorMessage(title: "エラー", body: "画像が設定されていません。")
+            messageAlert.shared.showErrorMessage(title: NSLocalizedString("error", comment: ""), body: NSLocalizedString("imageIsNotSet", comment: ""))
             return
         }
     }

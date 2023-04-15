@@ -67,7 +67,13 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDa
             calendar.appearance.headerDateFormat = "yyyy年MM月"
             
             // カレンダーの曜日を日本語表示
-            let JapaneseWeek = ["日","月","火","水","木","金","土"]
+            let JapaneseWeek = [NSLocalizedString("wsunday", comment: ""),
+                                NSLocalizedString("wmonday", comment: ""),
+                                NSLocalizedString("wtuesday", comment: ""),
+                                NSLocalizedString("wwednesday", comment: ""),
+                                NSLocalizedString("wtursday", comment: ""),
+                                NSLocalizedString("wfriday", comment: ""),
+                                NSLocalizedString("wsaturday", comment: "")]
             for i in 0..<JapaneseWeek.count {
                 calendar.calendarWeekdayView.weekdayLabels[i].text = JapaneseWeek[i]
             }

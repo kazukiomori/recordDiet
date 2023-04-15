@@ -19,6 +19,7 @@
 		3B3A5BEC29BC370200ED1B5C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A5BEB29BC370100ED1B5C /* AdSupport.framework */; };
 		3B3A5BEF29BC38C500ED1B5C /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A5BED29BC373300ED1B5C /* AppTrackingTransparency.framework */; };
 		3B3A5BF229BC38CA00ED1B5C /* Pods_recordDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A62F7DAA8229406713BF50 /* Pods_recordDiet.framework */; };
+		3B4A819A29EB0A7000F106A0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B4A819C29EB0A7000F106A0 /* Localizable.strings */; };
 		3B7E1DAC298E8DB9000B1902 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */; };
 		3B94BBA129993E4B00228F88 /* BodyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA029993E4B00228F88 /* BodyImage.swift */; };
 		3B94BBA3299976DE00228F88 /* BodyImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94BBA2299976DE00228F88 /* BodyImageModel.swift */; };
@@ -75,6 +76,12 @@
 		2CB690B4265A5467DC025CF8 /* Pods-recordDiet-recordDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recordDiet-recordDietUITests.debug.xcconfig"; path = "Target Support Files/Pods-recordDiet-recordDietUITests/Pods-recordDiet-recordDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B3A5BEB29BC370100ED1B5C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3B3A5BED29BC373300ED1B5C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		3B4A819229EB095900F106A0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		3B4A819329EB095900F106A0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3B4A819529EB099600F106A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3B4A819729EB099C00F106A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3B4A819B29EB0A7000F106A0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B4A819D29EB0A7700F106A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B7E1DAB298E8DB8000B1902 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		3B94BBA029993E4B00228F88 /* BodyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImage.swift; sourceTree = "<group>"; };
 		3B94BBA2299976DE00228F88 /* BodyImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyImageModel.swift; sourceTree = "<group>"; };
@@ -168,6 +175,7 @@
 				18A4A73B294E1D0A00464CB7 /* Assets.xcassets */,
 				18A4A73D294E1D0A00464CB7 /* LaunchScreen.storyboard */,
 				18A4A740294E1D0A00464CB7 /* Info.plist */,
+				3B4A819C29EB0A7000F106A0 /* Localizable.strings */,
 			);
 			path = recordDiet;
 			sourceTree = "<group>";
@@ -365,6 +373,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 18A4A726294E1CD000464CB7;
 			productRefGroup = 18A4A730294E1CD000464CB7 /* Products */;
@@ -384,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A4A73F294E1D0A00464CB7 /* LaunchScreen.storyboard in Resources */,
+				3B4A819A29EB0A7000F106A0 /* Localizable.strings in Resources */,
 				18A4A73C294E1D0A00464CB7 /* Assets.xcassets in Resources */,
 				18A4A73A294E1CD000464CB7 /* Main.storyboard in Resources */,
 			);
@@ -573,6 +583,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				18A4A739294E1CD000464CB7 /* Base */,
+				3B4A819229EB095900F106A0 /* ja */,
+				3B4A819729EB099C00F106A0 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -581,8 +593,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				18A4A73E294E1D0A00464CB7 /* Base */,
+				3B4A819329EB095900F106A0 /* ja */,
+				3B4A819529EB099600F106A0 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B4A819C29EB0A7000F106A0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4A819B29EB0A7000F106A0 /* ja */,
+				3B4A819D29EB0A7700F106A0 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -592,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -652,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

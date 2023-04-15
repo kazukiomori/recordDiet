@@ -224,25 +224,25 @@ public class lineChartFormatter: NSObject, AxisValueFormatter {
             for i in 0..<8 {
                 switch i {
                 case 0:
-                    array.append("日曜日")
+                    array.append(NSLocalizedString("sunday", comment: ""))
                     break
                 case 1:
-                    array.append("月曜日")
+                    array.append(NSLocalizedString("monday", comment: ""))
                     break
                 case 2:
-                    array.append("火曜日")
+                    array.append(NSLocalizedString("tuesday", comment: ""))
                     break
                 case 3:
-                    array.append("水曜日")
+                    array.append(NSLocalizedString("wednesday", comment: ""))
                     break
                 case 4:
-                    array.append("木曜日")
+                    array.append(NSLocalizedString("tursday", comment: ""))
                     break
                 case 5:
-                    array.append("金曜日")
+                    array.append(NSLocalizedString("friday", comment: ""))
                     break
                 case 6:
-                    array.append("土曜日")
+                    array.append(NSLocalizedString("saturday", comment: ""))
                     break
                 case 7:
                     array.append("")
@@ -255,7 +255,7 @@ public class lineChartFormatter: NSObject, AxisValueFormatter {
         case .Month:
             for i in 0..<31 {
                 if (i == 4 || i == 9 || i == 14 || i == 19 || i == 24 || i == 29) {
-                    array.append("\(i+1)日")
+                    array.append("\(i+1)+\(NSLocalizedString("date", comment: ""))")
                 } else {
                     array.append("")
                 }

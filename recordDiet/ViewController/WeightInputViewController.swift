@@ -44,18 +44,18 @@ class WeightInputViewController: UIViewController {
         let weight = weightVM.fetchTheDayData(date: date)
         if weight == 0 {
             weightTextField.text = ""
-            weightTextField.placeholder = "体重を入力してください"
+            weightTextField.placeholder = NSLocalizedString("enterYourWeight", comment: "")
         } else {
             weightTextField.text = "\(weight)"
         }
     }
     
     func navigationItemSet() {
-        cancelButtonItem = UIBarButtonItem(title: "キャンセル", style: .done, target: self, action: #selector(backButtonTapped))
+        cancelButtonItem = UIBarButtonItem(title: NSLocalizedString("cancel", comment: ""), style: .done, target: self, action: #selector(backButtonTapped))
         cancelButtonItem.tintColor = .black
         self.navigationItem.leftBarButtonItems = [cancelButtonItem]
         
-        addBarButtonItem = UIBarButtonItem(title: "保存", style: .done, target: self, action: #selector(addButtonTapped))
+        addBarButtonItem = UIBarButtonItem(title: NSLocalizedString("save", comment: ""), style: .done, target: self, action: #selector(addButtonTapped))
         addBarButtonItem.tintColor = .black
         self.navigationItem.rightBarButtonItems = [addBarButtonItem]
     }
@@ -73,7 +73,7 @@ class WeightInputViewController: UIViewController {
         }
         
         if dateTextField.text == "" {
-            messageAlert.shared.showErrorMessage(title: "エラー", body: "日付が入力されていません")
+            messageAlert.shared.showErrorMessage(title: NSLocalizedString("error", comment: ""), body: NSLocalizedString("notEnteredDate", comment: ""))
             return
         }
         
@@ -82,11 +82,11 @@ class WeightInputViewController: UIViewController {
             let date =  AppDate().pickerDateStrOnlyDate(date: datePicker.date)
             let date1 = AppDate().strDate(date: date)
             weightViewModel.addData(weightData: weightNum, dateData: date1, dateStData: AppDate().dateStrOnlyDate(date: date1))
-            messageAlert.shared.showSuccessMessage(title: "成功", body: "体重の保存に成功しました")
+            messageAlert.shared.showSuccessMessage(title: NSLocalizedString("success", comment: ""), body: NSLocalizedString("successfullySavedWeight", comment: ""))
             NotificationCenter.default.post(name: .graphViewShow, object: nil)
             self.navigationController?.popViewController(animated: false)
         } else {
-            messageAlert.shared.showErrorMessage(title: "エラー", body: "体重が入力されていません")
+            messageAlert.shared.showErrorMessage(title: NSLocalizedString("error", comment: ""), body: NSLocalizedString("notEnteresWeight", comment: ""))
         }
     }
     
@@ -103,14 +103,14 @@ class WeightInputViewController: UIViewController {
         
         let dateToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         let spacerItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        let dateDoneItem = UIBarButtonItem(title: "決定", style: .done, target: self, action: #selector(dateSelect))
+        let dateDoneItem = UIBarButtonItem(title: NSLocalizedString("decision", comment: ""), style: .done, target: self, action: #selector(dateSelect))
         dateToolBar.setItems([spacerItem, dateDoneItem], animated: true)
         
         dateTextField.inputView = datePicker
         dateTextField.inputAccessoryView = dateToolBar
         
         let weightToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
-        let weightDoneItem = UIBarButtonItem(title: "決定", style: .done, target: self, action: #selector(weightSelect))
+        let weightDoneItem = UIBarButtonItem(title: NSLocalizedString("decision", comment: ""), style: .done, target: self, action: #selector(weightSelect))
         weightToolBar.setItems([spacerItem, weightDoneItem], animated: true)
         
         weightTextField.inputAccessoryView = weightToolBar

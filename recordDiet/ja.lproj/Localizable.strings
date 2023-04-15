@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  recordDiet
+
+  Created by Kazuki Omori on 2023/04/16.
+  
+*/
+
+// TopViewController
+"sunday" = "日曜日";
+"monday" = "月曜日";
+"tuesday" = "火曜日";
+"wednesday" = "水曜日";
+"tursday" = "木曜日";
+"friday" = "金曜日";
+"saturday" = "土曜日";
+"date" = "日";
+
+// CalendarViewController
+"wsunday" = "日";
+"wmonday" = "月";
+"wtuesday" = "火";
+"wwednesday" = "水";
+"wtursday" = "木";
+"wfriday" = "金";
+"wsaturday" = "土";
+
+// WeightInputViewController
+"enterYourWeight" = "体重を入力してください";
+"cancel" = "キャンセル";
+"save" = "保存";
+"error" = "エラー";
+"notEnteredDate" = "日付が入力されていません";
+"success" = "成功";
+"successfullySavedWeight" = "体重の保存に成功しました";
+"notEnteresWeight" = "体重が入力されていません";
+"decision" = "決定";
+
+// FoodListViewController
+"@theDayCalorie%ll" = "@の摂取カロリーは%lldKcalです";
+"successfullySavedPhotosOfTheBody" = "体の写真の保存に成功しました。";
+"imageIsNotSet" = "画像が設定されていません。";
+
+// FoodInputViewController
+"pleaseEnteraTime" = "時間を入力してください";
+"pleaseEnteraMenu" = "メニューを入力してください";
+"pleaseEnteraCalorie" = "カロリーを入力してください";
+"pleaseEnteraMemo" = "メモを入力してください";
+"timeIsNotSet" = "時間が設定されていません";
+"menuIsNotSet" = "メニューが設定されていません";
+"pleaseEnterUpTo50CharactersForTheMenu" = "メニューは50文字以内で入力してください";
+"calorieIsNotSet" = "カロリーが設定されていません";
+"setAt5000KcalOrLess" = "5000Kcal以下で設定してください";
+"pleaseEnterUpTo200CharactersForTheMemo" = "メモは200文字以内で入力してください";
+"successfullySavedMenu" = "メニューの保存に成功しました";
